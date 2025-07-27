@@ -22,5 +22,6 @@ csvsort -c revenue -r tmdb-movies.csv | head -n 11 | csvcut -c id,original_title
 #6
 csvcut -c director tmdb-movies.csv | csvstat --freq | tail -n 1 | jq -r 'to_entries | sort_by(.value) | .[-1] | "\(.key): \(.value)"'
 csvcut -c cast tmdb-movies.csv | csvgrep -c cast -r ".+" | csvstat --freq | tail -n 1 | jq -r 'to_entries | max_by(.value) | "\(.key): \(.value)"'
+
 #7
 csvcut -c genres tmdb-movies.csv | csvstat --freq
