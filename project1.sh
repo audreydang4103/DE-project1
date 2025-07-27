@@ -24,4 +24,4 @@ csvcut -c director tmdb-movies.csv | csvstat --freq | tail -n 1 | jq -r 'to_entr
 csvcut -c cast tmdb-movies.csv | csvgrep -c cast -r ".+" | csvstat --freq | tail -n 1 | jq -r 'to_entries | max_by(.value) | "\(.key): \(.value)"'
 
 #7
-csvcut -c genres tmdb-movies.csv | csvstat --freq
+csvcut -c genres tmdb-movies.csv | tail -n +2 | tr '|' '\n' | grep . | sort | uniq -c | sort -rn
