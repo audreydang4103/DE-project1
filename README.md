@@ -3,9 +3,9 @@
 To deploy and run this project, you will need a Linux environment (Ubuntu, MacOS, WSL on Windows,...).
 
 ### Clone the repo:
-git clone https://github.com/audreydang4103/DE-project1
+git clone https://github.com/audreydang4103/Linux-CMD-Project-Movie-Dataset-Analysis
 
-cd DE-project1
+cd Linux-CMD-Project-Movie-Dataset-Analysis
 ### Download the Dataset:
 curl -o tmdb-movies.csv https://raw.githubusercontent.com/yinghaoz1/tmdb-movie-dataset-analysis/master/tmdb-movies.csv
 ### Run the Analysis Script:
