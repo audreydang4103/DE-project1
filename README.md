@@ -78,7 +78,8 @@ chmod +x project1.sh
 
 
      408 Music
-     334 History
+
+    334 History
 
      270 War
 
